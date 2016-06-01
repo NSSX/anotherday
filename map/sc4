@@ -1,0 +1,51 @@
+pov{
+        color(12,45,56)
+        pos(0,2,5)
+}
+
+plane{
+        pos(0,0,0)
+        rot(0,1,0)
+}
+
+plane{
+        pos(0,8,0)
+        rot(0,1,0)
+}
+
+plane{
+        pos(-3,0,0)
+        rot(90,0,-1)
+}
+
+plane{
+        pos(3,0,0)
+        rot(90,0,-1)
+}
+
+spot{
+        color(256,256,256)
+        pos(5,5,0)
+        int(70);
+}
+
+spot{
+        color(256,256,256)
+        pos(-5,5,0)
+        int(70);
+}
+
+sphere{
+	color(256,0,0)
+	pos(0,3,-10)	
+}
+
+cylinder{
+	color(0,255,0)
+	pos(2,0,3)
+}
+
+cylinder{
+        color(0,255,0)
+        pos(-2,0,3)
+}
