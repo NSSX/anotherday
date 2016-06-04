@@ -14,9 +14,9 @@ t_vec3d  reflexincidenton(t_vec3d *incident, t_vec3d *n)
                     color = e->color;
                     if(e->obj_tmp->type == 1 || e->obj_tmp->type == 0)
 		                  ref = 0.25;
-                if (ref < 0.99 && e->iter < REF_MAX)
+                if (ref < 0.99 && e->incre < MAX)
                   {
-                    e->iter += 1;
+                    e->incre += 1;
 		     reflex = vecreflect(&(e->ray_dir), &nor );
                     ajust(&reflex);
                     nor  =  mult_value(&nor , 0.01);
